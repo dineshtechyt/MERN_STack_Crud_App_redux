@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background-color: lightcyan;
+}
+
+/* -------------------HomePage-------------- */
+.home {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  margin: 2vh;
+  justify-content: center;
+  flex-direction: row;
+  /* width: 100%; */
+}
+.home-head {
+  text-align: center;
+  padding: 2vh;
+  margin: 1vh auto;
+  width: 30vh;
+  border-bottom: 2px solid rgb(39, 33, 33);
+}
+.head {
+  width: 20%;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.head button {
+  margin: 1vh;
+}
+
+.table {
+  margin: 4vh;
+  width: 80%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  text-align: center;
+}
+@media only screen and (max-width: 700px) {
+  .home {
+    margin: 2vh;
+    display: flex;
+    justify-content: space-evenly !important;
+    flex-direction: column;
+  }
+
+  .head {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+  .head button {
+    margin: 1vh;
+  }
+
+  .table {
+    width: 100%;
+  }
+}
+
+/* --------details-page-------- */
+.details {
+  height: 85vh;
+}
+.d-head {
+  display: flex;
+  justify-content: center;
+}
+.d-head h1 {
+  border-bottom: 2px solid black;
+}
+.empl-details {
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.details-list {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* width: 50%; */
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+  /* text-align: center; */
+  padding-left: 4vh;
+  margin: 1vh 5vh;
+  width: 40%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* border: 1px solid red; */
+  background-color: rgb(255, 255, 255);
+  /* padding: 0.7vh; */
+}
+@media only screen and (max-width: 700px) {
+  .details-list {
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* width: 50%; */
+  }
+
+  .line {
+    margin: 1vh 5vh;
+    width: 80%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* border: 1px solid red; */
+    background-color: rgb(255, 255, 255);
+  }
+  .details {
+    height: 100%;
+  }
+}
+/* --------create page------- */
+.main {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.create-employee {
+  /* border: 1px solid red; */
+
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.form {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  width: 70%;
+  padding: 2vh;
+
+  /* border: 1px solid red; */
+}
+.product-form label {
+  width: 40%;
+}
+.product-form input {
+  width: 40%;
+  height: 40px;
+}
+@media only screen and (max-width: 700px) {
+  .product-form input {
+    width: 90%;
+    height: 40px;
+  }
+  .form {
+    max-width: 400px;
+    width: 100%;
+    padding: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 0px solid red;
+  }
+}
+/* -------update--page--------------- */
+
+.update {
+  padding: 2vh;
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.update-employe {
+  width: 50%;
+}
+.update-form {
+  padding: 1vh;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+  width: 90%;
+  margin: auto;
+}
+.Add-details {
+  width: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .update {
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vh;
+    height: 100vh;
+  }
+
+  .update-employe {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+  }
+  .update-form {
+      max-width: 440px;
+    /* border: 1px solid black; */
+    width: 80%;
+    /* margin: auto; */
+  }
+  .update-form .product-form input {
+    width: 60%;
+  }
+  .Add-details {
+    width: 100%;
+  }
+}
