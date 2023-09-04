@@ -3,6 +3,8 @@ import { dbConnection } from "./db/dbConnection.js";
 import dotenv from "dotenv";
 import cors from "cors";
 import { empRouter } from "./routes/employeeRoutes.js";
+import { fileURLToPath } from "url";
+import path from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
